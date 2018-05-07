@@ -17,6 +17,6 @@ Bununla birlikte istenen veri tipinin mevcut veriye uymaması durumunda default 
 
 3. ConfigurationManagement-> MVC projesi olup ConfigurationReader vasıtasıyla storage üzerinde CRUD yapan projedir.
  
-4.ConfigurationManagement.Business.UnitTests-> ConfigurationReader class'ı için(Business İşlemleri bu class'ta yapıldığından) Unit Testlerin yazıldığı class'tır.
+4. ConfigurationManagement.Business.UnitTests-> ConfigurationReader class'ı için(Business İşlemleri bu class'ta yapıldığından) Unit Testlerin yazıldığı class'tır.
 Unit testler için NUnit ve NSubstitute kullanılmıştır.
  
