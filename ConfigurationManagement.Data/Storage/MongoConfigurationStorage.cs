@@ -18,9 +18,7 @@ namespace ConfigurationManagement.Data
             _client = new MongoClient(connectionString);
             _database = _client.GetDatabase("config");// db
             _collection = _database.GetCollection<ConfigurationRecord>("records");
-          
-
-
+         
         }
 
         public void Add(ConfigurationRecord record)
