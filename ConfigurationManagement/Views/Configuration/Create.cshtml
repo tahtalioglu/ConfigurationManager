@@ -1,0 +1,65 @@
+﻿@model ConfigurationModel
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div class="container">
+        @using (Html.BeginForm())
+        {<div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Add Configuration Details</h4>
+                </div>
+                <div class="panel-body">
+                    @if (TempData["Message"] != null)
+                    {
+                        @TempData["Message"]
+                    }
+
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            Name
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            Type
+                            @Html.TextBoxFor(m => m.Type, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            Value
+                            @Html.TextBoxFor(m => m.Value, new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            Application
+                            @Html.TextBoxFor(m => m.ApplicationName, new { @class = "form-control" })
+                        </div>
+                    </div>
+                   
+                     
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            <input id="Submit1" class="btn btn-success" type="submit" value="submit" />
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-sm-6 col-lg-4">
+                            @Html.ActionLink("Back to Home Page", "Index", "Car", null, new { @class = "btn btn-warning" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+
+</html>
