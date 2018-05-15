@@ -22,6 +22,7 @@ namespace ConfigurationManagement
         {
             services.AddMvc();
             services.AddScoped<IConfigurationReader, ConfigurationReader>();
+            services.AddScoped<IMessageBroker, RabbitMQMessageBroker>();
             BsonDefaults.GuidRepresentation = GuidRepresentation.CSharpLegacy;
         }
 
